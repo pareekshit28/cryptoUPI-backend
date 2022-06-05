@@ -7,11 +7,11 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.port || 5000;
 
-var corsOptions = {
-  origin: "*",
-};
+// var corsOptions = {
+//   origin: "*",
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
