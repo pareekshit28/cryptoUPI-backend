@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.port || 5000;
 
 var corsOptions = {
-  origin: "https://crypto-upi.herokuapp.com",
+  origin: "https://crypto-upi.vercel.app",
   optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
