@@ -7,13 +7,11 @@ const cors = require("cors");
 const app = express();
 const PORT = process.env.port || 5000;
 
-// var corsOptions = {
-//   origin: "*",
-// };
-
-// app.use(cors(corsOptions));
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.options("*", cors());
 
 app.post("/pay", (req, res) => {
   console.log(req.body);
